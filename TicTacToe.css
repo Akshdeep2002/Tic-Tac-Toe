@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html {
+    height: 100%;
+    width: 100%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    /* background-color: aquamarine; */
+  }
+  h1{
+    background-color: black;
+    color: white;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .game{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,150px);
+  }
+  .celebrationimg img{
+    width: 0;
+    transition: width 2s ease-in-out;
+  }
+  .box{
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .box:hover{
+    background-color: rgb(171, 226, 223);
+  }
+  .bt{
+    border-top: 0;
+  }
+  .bb{
+    border-bottom: 0;
+  }
+  .bl{
+    border-left: 0;
+  }
+  .br{
+    border-right: 0;
+  }
+#reset{
+  margin: 5px 15px;
+  padding: 2px 10px;
+  background-color: rgb(223, 217, 230);
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+}
+.info{
+  font-size: 20px;
+}
